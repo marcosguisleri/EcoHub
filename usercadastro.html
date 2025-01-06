@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EcoHub</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicon/site.webmanifest">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #ffffff;
+        }
+        .containert {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .form-container {
+            max-width: 700px;
+            padding: 30px;
+            width: 100%;
+            background-color: #ffffff;
+        }
+        .form-control {
+            width: 100%;
+        }
+        .form-label {
+            margin-bottom: 0.5rem;
+        }
+        .text-smaller {
+            font-size: 0.875rem;
+        }
+    </style>
+</head>
+<body>
+
+<main>
+    <div class="containert">
+        <div class="form-container">
+            <!-- Logo -->
+            <div class="text-center mb-4">
+                <img src="assets/img/logo_verde.png" alt="Logo" width="120" height="100">
+            </div>
+            <h1 class="text-center mb-4 text-success">Cadastro de Conta</h1>
+            <form id="registration-form" action="#" method="post">
+                <!-- Campo de nome completo -->
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="full-name" name="full-name" placeholder=" " required>
+                    <label for="full-name">Nome Completo:</label>
+                </div>
+                <!-- Campos de CPF e data de nascimento -->
+                <div class="row mb-3">
+                    <div class="col-lg-6">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="cpf" name="cpf" placeholder=" " required pattern="\d{3}\.\d{3}\.\d{3}-\d{2}">
+                            <label for="cpf">CPF:</label>
+                            <small class="text-muted">Formato: 000.000.000-00</small>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-floating">
+                            <input type="date" class="form-control" id="birth-date" name="birth-date" placeholder=" " required>
+                            <label for="birth-date">Data de Nascimento:</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- Campos de Endereço, Cidade e Estado -->
+                <div class="row mb-3">
+                    <div class="col-lg-6">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="address" name="address" placeholder=" " required>
+                            <label for="address">Endereço:</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="city" name="city" placeholder=" " required>
+                            <label for="city">Cidade:</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-lg-6">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="cep" name="cep" placeholder=" " required>
+                            <label for="cep">CEP:</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-floating">
+                            <select class="form-select" id="state" name="state" required>
+                                <option selected disabled value="">Estado</option>
+                                <option selected disabled value="">Estado</option>
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                            </select>
+                            <label for="state">Estado:</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- Campo de seleção de escola/faculdade -->
+                <div class="form-floating mb-3">
+                    <select class="form-select" id="institution" name="institution" required>
+                        <option selected disabled value="">Selecione sua Escola/Faculdade</option>
+                        <option value="escola1">Escola 1</option>
+                        <option value="escola2">Escola 2</option>
+                        <option value="faculdade1">Faculdade 1</option>
+                        <option value="faculdade2">Faculdade 2</option>
+                    </select>
+                    <label for="institution">Instituição</label>
+                </div>
+                <!-- Campo de e-mail -->
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="email" name="email" placeholder=" " required>
+                    <label for="email">E-mail:</label>
+                </div>
+                <!-- Campos de senha e confirmação de senha -->
+                <div class="row mb-3">
+                    <div class="col-lg-6">
+                        <div class="form-floating">
+                            <input type="password" class="form-control" id="password" name="password" placeholder=" " required minlength="8">
+                            <label for="password">Senha:</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-floating">
+                            <input type="password" class="form-control" id="confirm-password" name="confirm-password" placeholder=" " required minlength="8">
+                            <label for="confirm-password">Confirmação de Senha:</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- Botão de envio -->
+                <button type="submit" class="btn btn-success w-100 btn-lg"><b>Cadastrar</b></button>
+                <div class="text-center mt-3">
+                    <a href="login.html" style="text-decoration: none;">
+                        <span class="text-success"><b>Já possui uma conta?</b></span>
+                    </a>                
+                </div>
+            </form>
+            <!-- Mensagem de sucesso -->
+            <div id="success-message" class="mt-3 text-center d-none">
+                <p class="text-success">Obrigado! Seu cadastro foi realizado com sucesso.</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+<div class="container py-4">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center my-1">
+        <p class="col-md-4 mb-0 text-body-secondary">&copy; 2024 - <b class="text-success">EcoHub</b></p>
+
+        <a href="index.html" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <img src="assets/img/logo_verde.png" width="64" height="42" alt="">
+        </a>
+
+        <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="index.html" class="nav-link px-2 text-success"><b>Início</b></a></li>
+            <li class="nav-item"><a href="projetosgeral.html" class="nav-link px-2 text-body-secondary">Projetos</a></li>
+            <li class="nav-item"><a href="educacao.html" class="nav-link px-2 text-body-secondary">Educação</a></li>
+            <li class="nav-item"><a href="contato.html" class="nav-link px-2 text-body-secondary">Contato</a></li>
+            <li class="nav-item"><a href="termos.html" class="nav-link px-2 text-body-secondary">Termos</a></li>
+        </ul>
+    </footer>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>

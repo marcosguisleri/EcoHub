@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EcoHub</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicon/site.webmanifest">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .carousel-inner img {
+            min-height: 300px; 
+            object-fit: cover; 
+        }
+    </style>
+</head>
+<body>
+
+<header class="p-3 bg-dark text-white" id="inicio">
+    <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="index.html" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                <img src="assets/img/logo_verde.png" alt="logo" width="80" height="60">
+            </a>
+
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="projetosgeral.html" class="nav-link px-2 text-white">Projetos</a></li>
+                <li><a href="educacao.html" class="nav-link px-2 text-white">Educação</a></li>
+                <li><a href="contato.html" class="nav-link px-2 text-white">Contato</a></li>
+            </ul>
+
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                <div class="input-group">
+                    <input type="search" class="form-control form-control-dark bg-dark" placeholder="Procurar Projeto..." aria-label="Search" style="color: white !important;">
+                    <button class="btn btn-outline-secondary text-white" type="button">
+                      <i class="bi bi-search"></i>
+                    </button>
+                </div>                                 
+            </form>
+
+            <div class="text-end">
+                <a href="login.html"><button type="button" class="btn btn-success me-2">Entrar</button></a>
+                <a href="criarprojeto1.html"><button type="button" class="btn btn-outline-light">Crie seu Projeto</button></a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel" data-bs-interval="6500">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/img/carrousel1.jpg" 
+                     srcset="assets/img/carrousel1_small.jpg 600w, assets/img/carrousel1.jpg 1200w" 
+                     sizes="(max-width: 600px) 600px, 1200px"
+                     class="d-block w-100" alt="" height="500">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1><b>Cultivando o Futuro</b></h1>
+                    <h5>Alunos aprendem sobre sustentabilidade cuidando de mini hortas escolares. - SP</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/carrousel2.jpg" 
+                     srcset="assets/img/carrousel2_small.jpg 600w, assets/img/carrousel2.jpg 1200w" 
+                     sizes="(max-width: 600px) 600px, 1200px"
+                     class="d-block w-100" alt="" height="500">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1><b>Palestras sobre Sustentabilidade</b></h1>
+                    <h5>Escolas promovem palestras sobre sustentabilidade e proteção ambiental. - PA</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/carrousel3.jpg" 
+                     srcset="assets/img/carrousel3_small.jpg 600w, assets/img/carrousel3.jpg 1200w" 
+                     sizes="(max-width: 600px) 600px, 1200px"
+                     class="d-block w-100" alt="" height="500">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1><b>Consciência Ambiental Infantil</b></h1>
+                    <h5>Crianças aprendem a importância da reciclagem e do cuidado com o meio ambiente. - SC</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="assets/img/hero1.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+            </div>
+            <div class="col-lg-6">
+                <h1 class="display-5 fw-bold lh-1 mb-3 text-success-emphasis">Conectando ideias, construindo um futuro sustentável!</h1>
+                <p class="lead">Somos uma plataforma dedicada a financiar projetos acadêmicos de sustentabilidade, conectando mentes inovadoras e construindo um futuro sustentável juntos!</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <a href="projetosgeral.html"><button type="button" class="btn btn-success btn-lg px-4 me-md-2">Ver Projetos</button></a>
+                    <a href="criarprojeto1.html"><button type="button" class="btn btn-outline-success btn-lg px-4">Criar um Projeto</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid text-bg-dark py-4">
+        <div class="container py-5">
+            <div class="d-flex gap-2 justify-content-start py-1">
+                <span class="badge d-flex align-items-center p-1 pe-2 text-success-emphasis bg-success-subtle border border-success-subtle rounded-pill">
+                    <img class="rounded-circle me-1" width="24" height="24" src="assets/img/destaque1.jpg" alt="">Destaques da Semana
+                </span>
+            </div>
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center mt-2">
+                <h1 class="fw-light d-flex align-items-center">
+                    Projetos em Destaque
+                    <i class="fas fa-star ms-2" style="color: white;"></i>
+                </h1>
+                <div class="mt-2 mt-md-0">
+                    <a href="projetosods.html">
+                        <button type="button" class="btn btn-success">Ver Todos</button>
+                    </a>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mt-2">
+                <div class="col">
+                    <div class="card shadow-lg" style="max-width: 500px;">
+                        <a href="">
+                            <div id="carouselExampleSlidesOnly1" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3500">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="assets/img/proj8.jpeg" class="card-img-top" width="100%" height="225" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/img/proj9.jpeg" class="card-img-top" width="100%" height="225" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/img/proj2.jpg" class="card-img-top" width="100%" height="225" alt="...">
+                                    </div>
+                                </div>
+                            </div> 
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Gestão Urbana Sustentável</h5>
+                            <span class="text-secondary">por @joao_martin</span>
+                            <div class="mt-2">
+                                <span class="badge rounded-pill text-bg-warning">ODS 11</span>
+                                <span class="badge rounded-pill text-bg-success">RESÍDUOS URBANOS</span>
+                            </div>
+                            <p class="card-text mt-3">Tecnologia reciclável para cidades sustentáveis.</p>
+                            <div class="">
+                                <p class="card-text text-secondary">
+                                    <i class="fas fa-map-marker-alt" style="color: green;"></i><span class="ms-2">Universidade Federal de Engenharia Ambiental - SP</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-body pt-0">
+                            <button type="button" class="btn btn-success btn-sm px-4 me-md-1">
+                                <i class="fas fa-heart" style="color: white;"></i> <span class="ms-1">Favoritar</span>
+                            </button>
+                            <a href="exibirprojeto.html"><button type="button" class="btn btn-outline-success btn-sm px-4">Saiba Mais</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-lg" style="max-width: 500px;">
+                        <a href="">
+                            <div id="carouselExampleSlidesOnly2" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3500">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="assets/img/proj8.jpeg" class="card-img-top" width="100%" height="225" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/img/proj9.jpeg" class="card-img-top" width="100%" height="225" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/img/proj2.jpg" class="card-img-top" width="100%" height="225" alt="...">
+                                    </div>
+                                </div>
+                            </div> 
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Gestão Urbana Sustentável</h5>
+                            <span class="text-secondary">por @joao_martin</span>
+                            <div class="mt-2">
+                                <span class="badge rounded-pill text-bg-warning">ODS 11</span>
+                                <span class="badge rounded-pill text-bg-success">RESÍDUOS URBANOS</span>
+                            </div>
+                            <p class="card-text mt-3">Tecnologia reciclável para cidades sustentáveis.</p>
+                            <div class="">
+                                <p class="card-text text-secondary">
+                                    <i class="fas fa-map-marker-alt" style="color: green;"></i><span class="ms-2">Universidade Federal de Engenharia Ambiental - SP</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-body pt-0">
+                            <button type="button" class="btn btn-success btn-sm px-4 me-md-1">
+                                <i class="fas fa-heart" style="color: white;"></i> <span class="ms-1">Favoritar</span>
+                            </button>
+                            <a href="exibirprojeto.html"><button type="button" class="btn btn-outline-success btn-sm px-4">Saiba Mais</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-lg" style="max-width: 500px;">
+                        <a href="">
+                            <div id="carouselExampleSlidesOnly3" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3500">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="assets/img/proj8.jpeg" class="card-img-top" width="100%" height="225" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/img/proj9.jpeg" class="card-img-top" width="100%" height="225" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/img/proj2.jpg" class="card-img-top" width="100%" height="225" alt="...">
+                                    </div>
+                                </div>
+                            </div> 
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Gestão Urbana Sustentável</h5>
+                            <span class="text-secondary">por @joao_martin</span>
+                            <div class="mt-2">
+                                <span class="badge rounded-pill text-bg-warning">ODS 11</span>
+                                <span class="badge rounded-pill text-bg-success">RESÍDUOS URBANOS</span>
+                            </div>
+                            <p class="card-text mt-3">Tecnologia reciclável para cidades sustentáveis.</p>
+                            <div class="">
+                                <p class="card-text text-secondary">
+                                    <i class="fas fa-map-marker-alt" style="color: green;"></i><span class="ms-2">Universidade Federal de Engenharia Ambiental - SP</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-body pt-0">
+                            <button type="button" class="btn btn-success btn-sm px-4 me-md-1">
+                                <i class="fas fa-heart" style="color: white;"></i> <span class="ms-1">Favoritar</span>
+                            </button>
+                            <a href="exibirprojeto.html"><button type="button" class="btn btn-outline-success btn-sm px-4">Saiba Mais</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container px-4 py-5" id="featured-3">
+        <h1 class="pb-2 border-bottom text-success">Comece seu projeto!</h1>
+        <div class="row g-4 row-cols-1 row-cols-lg-3 align-items-stretch">
+            <div class="feature col mt-5">
+                <div class="feature-icon d-inline-flex align-items-center justify-content-center text-success fs-2 mb-3">
+                    <i class="bi bi-clipboard-plus fs-1"></i>
+                </div>
+                <h3 class="fs-2 text-body-emphasis">Cadastro de Projeto Sustentável</h3>
+                <p>Projetos apoiados são destacados por suas contribuições sustentáveis, dando visibilidade e reconhecimento aos alunos envolvidos.</p>
+                <a href="criarprojeto1.html" class="text-success" style="text-decoration: none;">
+                    <b>Cadastrar Projeto</b>
+                </a>
+            </div>
+            <div class="feature col mt-5">
+                <div class="feature-icon d-inline-flex align-items-center justify-content-center text-success fs-2 mb-3">
+                    <i class="bi bi-eye fs-1"></i>
+                </div>
+                <h3 class="fs-2 text-body-emphasis">Visibilidade e Apoio Financeiro</h3>
+                <p>Projetos ganham visibilidade junto a empresas e entusiastas, podendo receber apoio financeiro para aumentar seu impacto.</p>
+                <a href="#" class="text-success" style="text-decoration: none;">
+                    <b>Ver Projetos</b>
+                </a>
+            </div>
+            <div class="feature col mt-5 mb-3">
+                <div class="feature-icon d-inline-flex align-items-center justify-content-center text-success fs-2 mb-3">
+                    <i class="bi bi-award fs-1"></i>
+                </div>
+                <h3 class="fs-2 text-body-emphasis">Impacto, Mérito e Visibilidade</h3>
+                <p>Projetos apoiados são destacados por suas contribuições sustentáveis, dando visibilidade e reconhecimento aos alunos envolvidos.</p>
+                <a href="#" class="text-success" style="text-decoration: none;">
+                    <b>Saiba mais!</b>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid py-5 bg-dark text-white">
+        <div class="container py-2">
+            <div class="text-center">
+                <img src="assets/img/logo_branca.png" class="mt-1 mb-3" width="236" height="115">
+                <h1>Conectando Soluções a Investidores</h1>
+                <p class="col-lg-8 mx-auto fs-5">
+                    Temos o compromisso de conectar soluções inovadoras a investidores apaixonados. Somos uma plataforma que oferece visibilidade para projetos acadêmicos voltados para a sustentabilidade, unindo mentes criativas e construindo, em conjunto, um futuro mais sustentável e promissor.
+                </p>
+                <div class="d-flex justify-content-center gap-2 mb-4 mt-5">
+                    <a href="projetosgeral.html">
+                      <button class="btn btn-success btn-lg px-4 rounded-pill" type="button">
+                        Ver Projetos
+                        <i class="bi bi-arrow-right"></i>
+                      </button>
+                    </a>
+                    <a href="usercadastro.html">
+                      <button class="btn btn-outline-light btn-lg px-4 rounded-pill" type="button">
+                        Criar Conta
+                      </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</main>
+
+<div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-1">
+        <p class="col-md-4 mb-0 text-body-secondary">&copy; 2024 - <b class="text-success">EcoHub</b></p>
+
+        <a href="index.html" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <img src="assets/img/logo_verde.png" width="64" height="42" alt="">
+        </a>
+
+        <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="#inicio" class="nav-link px-2 text-success"><b>Início</b></a></li>
+            <li class="nav-item"><a href="projetosgeral.html" class="nav-link px-2 text-body-secondary">Projetos</a></li>
+            <li class="nav-item"><a href="educacao.html" class="nav-link px-2 text-body-secondary">Educação</a></li>
+            <li class="nav-item"><a href="contato.html" class="nav-link px-2 text-body-secondary">Contato</a></li>
+            <li class="nav-item"><a href="termos.html" class="nav-link px-2 text-body-secondary">Termos</a></li>
+        </ul>
+    </footer>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>

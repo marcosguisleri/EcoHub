@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EcoHub</title>
+    <!-- Ícones -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicon/site.webmanifest">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        /* Estilos customizados */
+        .custom-background {
+            background-image: url('assets/img/contato.png');
+            background-size: cover; 
+            height: 220px; 
+        }
+        body {
+            background-color: #ffffff; 
+        }
+        .containert {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+        }
+        .form-container {
+            max-width: 600px; 
+            padding: 15px;
+            width: 100%;
+        }
+        .form-control {
+            width: 100%; 
+        }
+        .form-label {
+            margin-bottom: 0.5rem; 
+        }
+    </style>
+</head>
+<body>
+
+<header class="p-3 bg-dark text-white" id="inicio">
+    <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <!-- Logo -->
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                <img src="assets/img/logo_verde.png" alt="logo" width="80" height="60">
+            </a>
+            <!-- Menu de navegação -->
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="projetosgeral.html" class="nav-link px-2 text-white">Projetos</a></li>
+                <li><a href="educacao.html" class="nav-link px-2 text-white">Educação</a></li>
+                <li><a href="contato.html" class="nav-link px-2 text-white">Contato</a></li>
+            </ul>
+            <!-- Formulário de busca -->
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                <div class="input-group">
+                    <input type="search" class="form-control form-control-dark bg-dark" placeholder="Procurar Projeto..." aria-label="Search" style="color: white !important;">
+                    <button class="btn btn-outline-secondary text-white" type="button">
+                      <i class="bi bi-search"></i>
+                    </button>
+                </div>                                 
+            </form>
+            <!-- Botões -->
+            <div class="text-end">
+                <a href="login.html"><button type="button" class="btn btn-success me-2">Entrar</button></a>
+                <a href="criarprojeto1.html"><button type="button" class="btn btn-outline-light">Crie seu Projeto</button></a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <!-- Cabeçalho -->
+    <div class="p-4 p-md-5 mb-4 rounded text-center text-white custom-background">
+        <div class="col-lg-12 px-0">
+            <h1 class="display-4">Entre em Contato</h1>
+            <p class="lead my-3">Preencha o formulário abaixo para entrar em contato conosco!</p>
+        </div>
+    </div>
+
+    <!-- Formulário de contato -->
+    <div class="containert">        
+        <div class="form-container">
+            <!-- Título do formulário -->
+            <h2 class="mb-4 text-success">Formulário de Contato</h2>
+            <form id="contact-form" action="#" method="post">
+                <!-- Campo de e-mail -->
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="email" name="email" placeholder=" " required>
+                    <label for="email">E-mail:</label>
+                </div>
+                <!-- Campo de nome -->
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="name" name="name" placeholder=" " required>
+                    <label for="name">Nome:</label>
+                </div>
+                <!-- Campo de assunto -->
+                <div class="form-floating mb-3">
+                    <select class="form-select" id="subject" name="subject" required>
+                        <option selected disabled value="">Selecione um assunto</option>
+                        <option value="suporte">Suporte</option>
+                        <option value="duvida">Dúvida</option>
+                        <option value="projetos">Projetos</option>
+                        <option value="financeiro">Financeiro</option>
+                    </select>
+                    <label for="subject">Assunto:</label>
+                </div>
+                <!-- Campo de mensagem -->
+                <div class="form-floating mb-3">
+                    <textarea class="form-control" id="message" name="message" rows="5" placeholder=" " style="resize: none;"></textarea>
+                    <label for="message">Mensagem:</label>
+                </div>
+                <!-- Campo de anexo -->
+                <div class="form-floating mb-3">
+                    <input type="file" class="form-control" id="attachment" name="attachment" accept="image/*, video/*, .pdf, .doc, .docx">
+                    <label for="attachment">Anexar arquivo:</label>
+                </div>
+                <!-- Botão de envio -->
+                <button type="submit" class="btn btn-success w-100 btn-lg mt-2"><b>Enviar</b></button>
+            </form>
+            <!-- Mensagem de sucesso -->
+            <div id="success-message" class="mt-3 text-center d-none">
+                <p class="text-success">Obrigado! Sua mensagem foi enviada com sucesso.</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Rodapé -->
+<div class="container mt-5">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-1">
+        <p class="col-md-4 mb-0 text-body-secondary">&copy; 2024 - <b class="text-success">EcoHub</b></p>
+
+        <a href="index.html" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <img src="assets/img/logo_verde.png" width="64" height="42" alt="">
+        </a>
+
+        <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="index.html" class="nav-link px-2 text-success"><b>Início</b></a></li>
+            <li class="nav-item"><a href="projetosgeral.html" class="nav-link px-2 text-body-secondary">Projetos</a></li>
+            <li class="nav-item"><a href="educacao.html" class="nav-link px-2 text-body-secondary">Educação</a></li>
+            <li class="nav-item"><a href="#inicio" class="nav-link px-2 text-body-secondary">Contato</a></li>
+            <li class="nav-item"><a href="termos.html" class="nav-link px-2 text-body-secondary">Termos</a></li>
+        </ul>
+    </footer>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>

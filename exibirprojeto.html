@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EcoHub</title>
+    <!-- Ícones -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicon/site.webmanifest">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .project-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .project-info i {
+            color: #6c757d;
+        }
+        .badge-category {
+            background-color: #28a745;
+            color: white;
+        }
+        .profile-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        .profile-left {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .profile-left img {
+            border-radius: 50%;
+            width: 64px;
+            height: 64px;
+        }
+        .profile-right {
+            text-align: right;
+        }
+        .profile-right a {
+            margin-left: 10px;
+            color: #6c757d;
+        }
+        #carouselExample {
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+        .badge-category {
+            max-width: 350px;
+            word-wrap: break-word;
+        }
+        .badge-height {
+            padding: 0.5em 1em; 
+            font-size: 1em; 
+            line-height: 1.5; 
+        }
+        .social-icon {
+            color: #6c757d; /* Cor inicial dos ícones */
+            margin: 0 10px;
+            transition: color 0.3s ease; /* Transição suave para o hover */
+        }
+
+        .social-icon.instagram:hover {
+            color: #E4405F; /* Cor do logo do Instagram */
+        }
+
+        .social-icon.linkedin:hover {
+            color: #0077B5; /* Cor do logo do LinkedIn */
+        }
+
+        .social-icon.facebook:hover {
+            color: #3b5998; /* Cor do logo do Facebook */
+        }
+
+        .carousel-inner img {
+            min-height: 300px; 
+            object-fit: cover; 
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- Cabeçalho -->
+<header class="p-3 bg-dark text-white" id="inicio">
+    <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="index.html" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                <img src="assets/img/logo_verde.png" alt="logo" width="80" height="60">
+            </a>
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="projetosgeral.html" class="nav-link px-2 text-white">Projetos</a></li>
+                <li><a href="educacao.html" class="nav-link px-2 text-white">Educação</a></li>
+                <li><a href="contato.html" class="nav-link px-2 text-white">Contato</a></li>
+            </ul>
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                <div class="input-group">
+                    <input type="search" class="form-control form-control-dark bg-dark" placeholder="Procurar Projeto..." aria-label="Search" style="color: white !important;">
+                    <button class="btn btn-outline-secondary text-white" type="button">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+            </form>
+            <div class="text-end">
+                <a href="login.html"><button type="button" class="btn btn-success me-2">Entrar</button></a>
+                <a href="criarprojeto1.html"><button type="button" class="btn btn-outline-light">Crie seu Projeto</button></a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Conteúdo Principal -->
+<main>
+    <div class="container py-3">
+        <!-- Carrossel de Imagens -->
+        <div class="row">
+            <div class="col-12">
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/img/carrousel3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/carrousel2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/carrousel1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Próximo</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Detalhes do Projeto -->
+        <div class="py-3">
+            <div class="d-flex justify-content-center align-items-center text-center flex-wrap">
+                <h1 class="text-success mb-0 me-3">Gestão Urbana Sustentável</h1>
+            </div>
+            <div class="text-center py-2">
+                <span class="text-secondary me-3">por @joao_martin</span>
+                <i class="fas fa-map-marker-alt me-2"></i>
+                <span class="text-secondary">Guarujá, SP</span>
+            </div>
+            <div class="d-flex justify-content-center align-items-center mt-2">
+                <span class="badge badge-category ms-3">ODS 8: Trabalho Decente e Crescimento Econômico</span>
+            </div>
+        </div>
+        
+        <hr>
+
+        <!-- Descrição do Projeto -->
+        <div class="row">
+            <div class="col-12">
+                <p class="lead" style="text-align: justify;">
+                    A Gestão Urbana Sustentável é um campo interdisciplinar que busca integrar práticas de desenvolvimento sustentável na administração e planejamento das áreas urbanas. Este trabalho acadêmico explora os principais desafios e oportunidades na implementação de estratégias sustentáveis em cidades, incluindo a gestão de recursos naturais, redução de emissões de carbono, promoção de mobilidade urbana eficiente e inclusiva, e fortalecimento da participação comunitária. A pesquisa destaca casos de sucesso e propõe recomendações para políticas públicas que possam fomentar cidades mais resilientes e equitativas.
+                </p>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Perfil do Autor -->
+        <div class="profile-info">
+            <div class="profile-left">
+                <img src="assets/img/lukinhaperfil.png" alt="Foto do Autor">
+                <div>
+                    <strong>João Martin</strong><br>
+                    <span class="text-secondary">@joao_martin</span>
+                    <br>
+                    <span class="text-secondary">Universidade Federal de São Carlos</span>
+                </div>
+            </div>
+            <div class="profile-right">
+                <a href="#" target="_blank" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank" class="social-icon linkedin"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>        
+
+        <!-- Botão de Apoio -->
+        <div class="text-center mt-5">
+            <button type="button" class="btn btn-success btn-lg">Apoiar este Projeto</button>
+        </div>
+    </div>
+</main>
+
+<!-- Rodapé -->
+<div class="container mt-5">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-1">
+        <p class="col-md-4 mb-0 text-body-secondary">&copy; 2024 - <b class="text-success">EcoHub</b></p>
+        <a href="index.html" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <img src="assets/img/logo_verde.png" width="64" height="42" alt="">
+        </a>
+        <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="index.html" class="nav-link px-2 text-success"><b>Início</b></a></li>
+            <li class="nav-item"><a href="projetosgeral.html" class="nav-link px-2 text-body-secondary">Projetos</a></li>
+            <li class="nav-item"><a href="educacao.html" class="nav-link px-2 text-body-secondary">Educação</a></li>
+            <li class="nav-item"><a href="#inicio" class="nav-link px-2 text-body-secondary">Contato</a></li>
+            <li class="nav-item"><a href="termos.html" class="nav-link px-2 text-body-secondary">Termos</a></li>
+        </ul>
+    </footer>
+</div>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
